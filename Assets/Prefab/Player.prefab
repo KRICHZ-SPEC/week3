@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6157444916761975821}
   - component: {fileID: 1443929699365195266}
   - component: {fileID: 6322085526792589793}
+  - component: {fileID: 8965191189439396580}
+  - component: {fileID: 3295930891996735882}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -153,6 +155,33 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8965191189439396580
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037389245566758336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ed2cdef02886ae458ad9c9703a43f33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerAiming
+  ShowTopMostFoldoutHeaderGroup: 1
+  inputReader: {fileID: 11400000, guid: 3028c8e959fa1fc4baa934951e0a9025, type: 2}
+  turretTransform: {fileID: 7287915373490404312}
+--- !u!114 &3295930891996735882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037389245566758336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c29a9e4c1bd39144bf3ee0f0570752e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ProjectileLauncher
 --- !u!1 &4024768412673508142
 GameObject:
   m_ObjectHideFlags: 0
