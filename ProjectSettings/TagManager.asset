@@ -12,7 +12,7 @@ TagManager:
   - Water
   - UI
   - Projectile
-  - 
+  - Pickup
   - 
   - 
   - 
@@ -44,11 +44,14 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Player
-    uniqueID: 388112859
-    locked: 0
   - name: Terrain
     uniqueID: 1693559621
+    locked: 0
+  - name: Coin
+    uniqueID: 2356864939
+    locked: 0
+  - name: Player
+    uniqueID: 388112859
     locked: 0
   m_RenderingLayers:
   - Default
