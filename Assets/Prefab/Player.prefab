@@ -5115,6 +5115,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ProjectileLauncher
   ShowTopMostFoldoutHeaderGroup: 1
   inputReader: {fileID: 11400000, guid: 3028c8e959fa1fc4baa934951e0a9025, type: 2}
+  wallet: {fileID: 6979749192806780929}
   projectileSpawnPoint: {fileID: 2219887366050380986}
   serverProjectilePrefab: {fileID: 5030706417256155028, guid: 8c70b0c294225354ca2b419b6a1a6e1b, type: 3}
   clientProjectilePrefab: {fileID: 7653370543608727496, guid: 7663626eba7e6074d85f7779ebd5f9a9, type: 3}
@@ -5123,6 +5124,7 @@ MonoBehaviour:
   projectileSpeed: 30
   fireRate: 1
   muzzleFlashDuration: 0.075
+  costToFire: 5
 --- !u!114 &-3414420291884714670
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5152,7 +5154,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TankPlayer
   ShowTopMostFoldoutHeaderGroup: 1
-  cinemachineCamera: {fileID: 6250425505762630504}
+  virtualCamera: {fileID: 6250425505762630504}
+  <Health>k__BackingField: {fileID: -3414420291884714670}
+  <Wallet>k__BackingField: {fileID: 6979749192806780929}
   ownerPriority: 15
 --- !u!114 &6979749192806780929
 MonoBehaviour:
