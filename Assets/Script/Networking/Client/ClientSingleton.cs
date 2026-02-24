@@ -9,7 +9,7 @@ public class ClientSingleton : MonoBehaviour
     {
         get
         {
-            if (instance == null) { return instance; }
+            if (instance != null) { return instance; }
             instance = FindFirstObjectByType<ClientSingleton>();
 
             if (instance == null)
@@ -30,6 +30,11 @@ public class ClientSingleton : MonoBehaviour
         GameManager = new ClientGameManager();
 
         return await GameManager.InitAsync();
+    }
+
+    private void OnDestroy()
+    {
+        GameManager?.Dispose();
     }
 }
 

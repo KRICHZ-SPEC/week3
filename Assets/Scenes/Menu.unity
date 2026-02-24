@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 8033173}
   - component: {fileID: 8033175}
   - component: {fileID: 8033174}
+  - component: {fileID: 8033176}
   m_Layer: 0
   m_Name: LobbiesBackground
   m_TagString: Untagged
@@ -198,6 +199,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8033172}
   m_CullTransparentMesh: 1
+--- !u!114 &8033176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8033172}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c94d76ff6ac4928478661e1fc2e44932, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LobbiesList
+  lobbyItemParent: {fileID: 858878310}
+  lobbyItemPrefab: {fileID: -5909524467596055703, guid: add603cf691fb2d4da639eb818b9e3c2, type: 3}
 --- !u!1 &177317838
 GameObject:
   m_ObjectHideFlags: 0
@@ -207,6 +222,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 177317839}
+  - component: {fileID: 177317840}
   m_Layer: 0
   m_Name: MainMenu
   m_TagString: Untagged
@@ -230,6 +246,19 @@ Transform:
   - {fileID: 700881377}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &177317840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177317838}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4a4be816396de9409e557d5df2fd845, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::MainMenu
+  joinCodeField: {fileID: 1594140108}
 --- !u!1 &225076631
 GameObject:
   m_ObjectHideFlags: 0
@@ -672,7 +701,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 474262069}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 177317840}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: StartClient
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &474262069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1236,7 +1277,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 120}
+  m_SizeDelta: {x: 0, y: 20}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &858878311
 MonoBehaviour:
@@ -1360,7 +1401,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 900647226}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8033176}
+        m_TargetAssemblyTypeName: LobbiesList, Assembly-CSharp
+        m_MethodName: RefreshList
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &900647226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2039,7 +2092,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1442149640}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 177317840}
+        m_TargetAssemblyTypeName: MainMenu, Assembly-CSharp
+        m_MethodName: StartHost
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1442149640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3100,7 +3165,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1723912632799285528, guid: add603cf691fb2d4da639eb818b9e3c2, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 1381.4379
+      value: 1105.5255
       objectReference: {fileID: 0}
     - target: {fileID: 1723912632799285528, guid: add603cf691fb2d4da639eb818b9e3c2, type: 3}
       propertyPath: m_SizeDelta.y
@@ -3136,7 +3201,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1723912632799285528, guid: add603cf691fb2d4da639eb818b9e3c2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 700.71893
+      value: 562.76276
       objectReference: {fileID: 0}
     - target: {fileID: 1723912632799285528, guid: add603cf691fb2d4da639eb818b9e3c2, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -3157,6 +3222,10 @@ PrefabInstance:
     - target: {fileID: 3857670122121425672, guid: add603cf691fb2d4da639eb818b9e3c2, type: 3}
       propertyPath: m_Name
       value: LobbyItem
+      objectReference: {fileID: 0}
+    - target: {fileID: 3857670122121425672, guid: add603cf691fb2d4da639eb818b9e3c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
