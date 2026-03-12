@@ -77,4 +77,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8b5114679c7adc49b23a7f73113440a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DealDamageOnContact
+  projectile: {fileID: 0}
   damage: 5

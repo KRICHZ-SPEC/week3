@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: -5517196207933565510}
   - component: {fileID: 4002345809501954724}
   - component: {fileID: -3379967531055100834}
+  - component: {fileID: 8409752661056125543}
   m_Layer: 6
   m_Name: ProjectileBase
   m_TagString: Untagged
@@ -110,6 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c36a03d84b3b445439b8b2d32b4b5bf9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DestroySelfOnContact
+  projectile: {fileID: 8409752661056125543}
 --- !u!114 &-3379967531055100834
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123,3 +125,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Lifetime
   lifetime: 2
+--- !u!114 &8409752661056125543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7828515195234596778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39bbce501b4c79b468092f07b90bd702, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Projectile
